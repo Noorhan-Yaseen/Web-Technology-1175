@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!--This is used for comment-->
+
+  <!--h1,h2,--h6 is used for heading-->
+    <h1>This is my 1st web page</h1>
+    <h2>Tags:</h2>
+
+    <!--p used for paragraph-->
+    <p>this is my 1st paragraph.</p>
+
+    <!--this is used to display text as written html-->
+    <pre>Lorem, ipsum.</pre>
+
+    <!-- b used for bold, i used for italic,u for underline-->
+    <b>bold</b>
+    <br>
+    <i>italic</i>
+    <br>
+    <u>underline</u>
+    <br>
+    <big>this is big</big>
+    <br>
+    <small>this is small</small>
+    <br>
+    <em>Emphasized text</em>
+<br>
+    <!--a is used for attaching links-->
+    <a href="http://www.google.com">attaching google link</a>
+    <br>
+
+    <!--img used for images-->
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt="" width="121px">
+    <br>
+
+    <!--inframe is used for video from youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BsDoLVMnmZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+       
+      <!--div is an example of block element-->
+      <div>
+        <h2>this is word</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur .</p>
+    </div>
+
+    <!--span is an example of inline element,take only specific place-->
+    <span>this is span</span>
+
+    <div>
+
+        <!--table-->
+        <table>
+
+            <!--caption is used for caption for anything-->
+            <caption>table</caption>
+            <thead>
+                <tr>
+
+                <!--th is used for table header
+                td is used for table data
+            colspan is used to merge colums-->
+                <th>S.no </th>
+
+                <!-- <th>Name </th> -->
+                <th colspan="2">Marks
+                </th>
+            </tr>
+            </thead>
+
+            <tr>
+                <td>1 </td>
+                <td>noor </td>
+                <td>66 </td>
+            </tr>
+
+            <tr>
+                <td>2 </td>
+                <td>MR </td>
+                <td>75 </td>
+            </tr>
+        </table>
+    </div>
+
+<!--ul is used for list-->
+    <ul type="square">
+<li>home</li>
+<li>about</li>
+    </ul>
+    <ul type="circle">
+<li>home</li>
+<li>about</li>
+    </ul>
+    <ul type="disc">
+<li>home</li>
+<li>about</li>
+    </ul>
+
+    <!--ol ordered list numbered list-->
+    <ol type="i">
+   <li>home</li>
+<li>about</li>
+    </ol>
+
+    <!--form, Input types-->
+    Name:<input type="text" placeholder="enter your name">
+    <br>
+    Email:<input type="email" name="enter email">
+    <br>
+    Number:<input type="number" name="mynumber">
+    <br>
+    Date:<input type="date" name="mydate">
+    <br>
+    Eligibility:<input type="checkbox" name="mycheckbox">
+    <br>
+    Gender:Female<input type="radio" name="mygender">Male<input type="radio" name="mygender">
+    <br>
+
+    <!--label tag defines a label for several elements-->
+    <label for="sectionidb">
+        <input type="radio" value="section b" name="section" id="sectionidb"> section B
+    </label>
+    <br>
+    
+    <!--option tag defines an option in a select list-->
+    <select name="car" id="car">Select Your car>
+        <option value="Honda">Honda</option>
+        <option value="BMW">BMW</option>
+    </select>
+<br>
+<textarea name="textarea" row="4" colums="2">text here about yourself</textarea>
+<br>
+<input type="submit" name="submit now">
+<br>
+<article>this is aritival</article>
+<br>
+    <aside> this is aside </aside>
+    <br>
+    <section>this is section</section>
+    <br>
+    <header>This is the header</header>
+    <br>
+    <nav>nav bar</nav>
+    <br>
+    <footer>this is the footer</footer>
+    <br>
+<section>
+    <p>Bunch of content</p>
+</section>
+<blockquote>The way to get started is to quit talking and begin doing</blockquote>
+<br>
+<!--<dl> defines a description list.  <dt> defines terms/name and <dd> describes each term/name.-->
+<dl>
+    <dt>HTML:</dt>
+    <dd>Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.</dd>
+</dl>
+<hr> 
+<!--horizontal line-->
+<figure>
+    <img src="image.jfif.jpg" alt="Image">
+    <figcaption>This is the image of etc</figcaption>
+</figure>
+
+<!--track tag is used for videos or audio element-->
+<video width="320" height="240" controls>
+    <source src="forrest_gump.mp4" type="video/mp4">
+    <source src="forrest_gump.ogg" type="video/ogg">
+    <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+  </video>
+
+<br>
+<p><abbr>HTML</abbr>stands for Hypertext Markup Language</p>
+<br>
+<p><bdi class="name">Place</bdi>: Faisalabad</p>
+
+<!--svg is used for graphics-->
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+  </svg>
+<br>
+<p>The function <code>Print</code> is used to print</p>
+
+ <!-- subcript and superscript -->
+ <p>C0<sub>2</sub></p>
+ <p>a<sup>2</sup>+b</p>
+
+ <p>... the most important rule, the rule you can never forget, no matter how much he cries, no matter how much he begs: <strong>never feed him after midnight</strong>.</p>
+
+ <!--Dfn italic-->
+    <p>A <dfn>validator</dfn> is a program that checks for syntax errors in code or documents.</p>
+ 
+    <!--Portal another page-->
+    <portal src="https://portal.com/">portal</portal>
+
+    <!--Picture is use to add picture, source is used to define path for audio,video and picture-->
+    <picture>
+        <source srcset="/media/cc0-images/surfer-240-200.jpg"
+                media="(min-width: 800px)">
+        <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="IMG">
+    </picture>
+
+    <!--object is used for external resource-->
+    <object type="application/pdf"
+    data="/media/examples/In-CC0.pdf"
+    width="250"
+    height="200">
+</object>
+
+<!--del is used to strike-->
+<p>Lorem ipsum <del>Lorem.</del> dolor sit amet.</p>
+
+<!-- ruby annotation is a small extra text-->
+<ruby>
+    HTML <rt> is a web language </rt>
+    </ruby>
+
+    <!--form is used to make forms and output is used to show ouput -->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50">
+        +<input type="number" id="b" value="25">
+        =<output name="x" for="a b"></output>
+      </form>
+
+<!--progress is used to show completion of a task-->
+      <progress id="file" value="32" max="100"> 32% </progress>
+
+      <!--summary tag defines heading for details element, detail tag = additional details.-->
+      <details>
+        <summary>summary</summary>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit delectus mollitia quod modi? At ea animi assumenda, possimus aspernatur sit accusamus debitis..</p>
+      </details>
+
+      <!--dialog is used show dialog box/ window-->
+      <dialog open>This is an open dialog window</dialog>
+      
+<!--abbr = abbreviation, acronym-->
+      The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+
+      <!--param tag is used to define parameters for an <object> element.-->
+        <object data="horse.wav">
+            <param name="autoplay" value="true">
+          </object>
+
+          <!--spacer tag is used to create some white-space.-->
+          <spacer type="block" width="50" /> for Geeks</p>
+
+</body>
+</html>
