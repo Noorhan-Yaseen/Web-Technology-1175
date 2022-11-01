@@ -5,61 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+
 </head>
 <body>
   <!--This is used for comment-->
 
-  <!--h1,h2,--h6 is used for heading-->
-    <h1>This is my 1st web page</h1>
-    <h2>Tags:</h2>
-
+  <!--h1,h2,-h6 is used for heading-->
+    <h1>CSS Implementation</h1>
+   
+<h2>Paragraph Tag:</h2>
     <!--p used for paragraph-->
-    <p>this is my 1st paragraph.</p>
-
-    <!--this is used to display text as written html-->
-    <pre>Lorem, ipsum.</pre>
-
+    <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
+    <h2>Block elements</h2>
+    <div class="pra">
+        <ul>
     <!-- b used for bold, i used for italic,u for underline-->
-    <b>bold</b>
-    <br>
-    <i>italic</i>
-    <br>
-    <u>underline</u>
-    <br>
-    <big>this is big</big>
-    <br>
-    <small>this is small</small>
-    <br>
-    <em>Emphasized text</em>
-<br>
+  <li> <b>bold</b></li>
+ <li><i>italic</i></li>
+    <li><u>underline</u></li>
+<li><big>this is big</big></li>
+    <li><small>this is small</small></li>
+    <li><em>Emphasized text</em></li>
     <!--a is used for attaching links-->
-    <a href="http://www.google.com">attaching google link</a>
+   <li> <a href="http://www.google.com" target="_blank">Google</a></li>
+</ul>
     <br>
+</div>
+    <h2>Image Tag:</h2>
 
     <!--img used for images-->
     <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt="" width="121px">
     <br>
-
+<h2>Video Tag:</h2>
     <!--inframe is used for video from youtube-->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/BsDoLVMnmZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br>
-       
+       <h2>Div Tag:</h2>
       <!--div is an example of block element-->
-      <div>
-        <h2>this is word</h2>
+      <div id="red">
         <p>Lorem, ipsum dolor sit amet consectetur .</p>
     </div>
-
+    <h2>Span Tag:</h2>
     <!--span is an example of inline element,take only specific place-->
-    <span>this is span</span>
+    <span style="font-weight:bold">HTML Span Tag</span>
 
     <div>
-
+<h2>Table Tag:</h2>
         <!--table-->
         <table>
 
             <!--caption is used for caption for anything-->
-            <caption>table</caption>
+            <caption>Table</caption>
             <thead>
                 <tr>
 
@@ -87,7 +84,7 @@
             </tr>
         </table>
     </div>
-
+<h2>Listing Tag:</h2>
 <!--ul is used for list-->
     <ul type="square">
 <li>home</li>
@@ -101,111 +98,110 @@
 <li>home</li>
 <li>about</li>
     </ul>
-
-    <!--ol ordered list numbered list-->
-    <ol type="i">
-   <li>home</li>
-<li>about</li>
-    </ol>
-
+<h2>Form Tag:</h2>
     <!--form, Input types-->
-    Name:<input type="text" placeholder="enter your name">
-    <br>
-    Email:<input type="email" name="enter email">
-    <br>
-    Number:<input type="number" name="mynumber">
-    <br>
-    Date:<input type="date" name="mydate">
-    <br>
-    Eligibility:<input type="checkbox" name="mycheckbox">
-    <br>
-    Gender:Female<input type="radio" name="mygender">Male<input type="radio" name="mygender">
-    <br>
+    <form action="/action_page.php">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="Firstname" placeholder="Enter your name">
+        <label for="femail">Email</label>
+        <input type="email" id="femail" name="Email" placeholder="Enter your email">
+        <label for="fnumber">Number</label>
+        <input type="number" id="fnumber" name="Phone-Number" placeholder="Enter your number">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Pakistan</option>
+          <option value="canada">Saudia Arabia</option>
+          <option value="usa">Dubai</option>
+        </select>
+        <input type="submit" value="Submit">
+        </form>
 
+<h2>Radio Button Tag:</h2>
     <!--label tag defines a label for several elements-->
     <label for="sectionidb">
+        <input type="radio" value="section b" name="section" id="sectionidb"> section A
         <input type="radio" value="section b" name="section" id="sectionidb"> section B
     </label>
     <br>
-    
+    <h2>Selection Tag:</h2>
     <!--option tag defines an option in a select list-->
     <select name="car" id="car">Select Your car>
         <option value="Honda">Honda</option>
         <option value="BMW">BMW</option>
     </select>
 <br>
-<textarea name="textarea" row="4" colums="2">text here about yourself</textarea>
+<h2> Textarea Tag:</h2>
+<textarea name="textarea" row="4" colums="2">Text Here About Yourself</textarea>
 <br>
-<input type="submit" name="submit now">
-<br>
-<article>this is aritival</article>
-<br>
-    <aside> this is aside </aside>
+<h2> Article Tag:</h2>
+<h3>Article:</h3>
+<p style="text-shadow: 0 0 3px #d77b7b, 0 0 5px #8a8ae4">
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptates culpa accusamus laboriosam qui dolor, et delectus quo quos obcaecati maxime voluptatibus?
+</p>
+</article>
+    <h2>Nav Tag:</h2>
+ <nav>
+    <ul>
+    <li style="padding: 0 40px"><a class="active" href="#home">Home</a></li>
+    <li style="padding: 0 40px"><a href="#news">News</a></li>
+    <li style="padding: 0 40px"><a href="#contact">Contact</a></li>
+    <ul>
+ </nav>
     <br>
-    <section>this is section</section>
-    <br>
-    <header>This is the header</header>
-    <br>
-    <nav>nav bar</nav>
-    <br>
+    <h2>footer Tag:</h2>
     <footer>this is the footer</footer>
     <br>
-<section>
-    <p>Bunch of content</p>
-</section>
-<blockquote>The way to get started is to quit talking and begin doing</blockquote>
+    <h2>Blackquote Tag:</h2>
+<blockquote cite="http://www.worldwildlife.org/who/index.html"
+style="color: rgb(174, 111, 33)">The way to get started is to quit talking and begin doing</blockquote>
 <br>
 <!--<dl> defines a description list.  <dt> defines terms/name and <dd> describes each term/name.-->
+    <h2>Description list Tag:</h2>
 <dl>
     <dt>HTML:</dt>
     <dd>Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.</dd>
 </dl>
 <hr> 
 <!--horizontal line-->
+<h2>Figure Tag:</h2>
 <figure>
-    <img src="image.jfif.jpg" alt="Image">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt="" width="121px">
     <figcaption>This is the image of etc</figcaption>
 </figure>
 
 <!--track tag is used for videos or audio element-->
+<h2>Video Tag:</h2>
 <video width="320" height="240" controls>
     <source src="forrest_gump.mp4" type="video/mp4">
     <source src="forrest_gump.ogg" type="video/ogg">
     <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
     <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
   </video>
-
+  <h2> Abbreviation Tag:</h2>
+<abbr>HTML</abbr>stands for Hypertext Markup Language
 <br>
-<p><abbr>HTML</abbr>stands for Hypertext Markup Language</p>
-<br>
-<p><bdi class="name">Place</bdi>: Faisalabad</p>
-
 <!--svg is used for graphics-->
+<h2>Svg Tag:</h2>
 <svg width="100" height="100">
     <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
   </svg>
 <br>
+<h2>Code Tag:</h2>
 <p>The function <code>Print</code> is used to print</p>
-
+<h2>Subcript and superscript Tag:</h2>
  <!-- subcript and superscript -->
  <p>C0<sub>2</sub></p>
  <p>a<sup>2</sup>+b</p>
-
- <p>... the most important rule, the rule you can never forget, no matter how much he cries, no matter how much he begs: <strong>never feed him after midnight</strong>.</p>
-
+ <h2>Dfn Tag:</h2>
  <!--Dfn italic-->
     <p>A <dfn>validator</dfn> is a program that checks for syntax errors in code or documents.</p>
- 
-    <!--Portal another page-->
-    <portal src="https://portal.com/">portal</portal>
-
     <!--Picture is use to add picture, source is used to define path for audio,video and picture-->
     <picture>
         <source srcset="/media/cc0-images/surfer-240-200.jpg"
                 media="(min-width: 800px)">
-        <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="IMG">
+        <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="">
     </picture>
-
+    <h2>Object Tag:</h2>
     <!--object is used for external resource-->
     <object type="application/pdf"
     data="/media/examples/In-CC0.pdf"
@@ -213,43 +209,20 @@
     height="200">
 </object>
 
-<!--del is used to strike-->
-<p>Lorem ipsum <del>Lorem.</del> dolor sit amet.</p>
-
-<!-- ruby annotation is a small extra text-->
-<ruby>
-    HTML <rt> is a web language </rt>
-    </ruby>
-
-    <!--form is used to make forms and output is used to show ouput -->
-    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-        <input type="range" id="a" value="50">
-        +<input type="number" id="b" value="25">
-        =<output name="x" for="a b"></output>
-      </form>
-
 <!--progress is used to show completion of a task-->
       <progress id="file" value="32" max="100"> 32% </progress>
 
       <!--summary tag defines heading for details element, detail tag = additional details.-->
+      <h2>Summary Tag:</h2>
       <details>
         <summary>summary</summary>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit delectus mollitia quod modi? At ea animi assumenda, possimus aspernatur sit accusamus debitis..</p>
       </details>
-
+      <h2>Dialog:</h2>
       <!--dialog is used show dialog box/ window-->
       <dialog open>This is an open dialog window</dialog>
-      
-<!--abbr = abbreviation, acronym-->
-      The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
-
-      <!--param tag is used to define parameters for an <object> element.-->
-        <object data="horse.wav">
-            <param name="autoplay" value="true">
-          </object>
-
-          <!--spacer tag is used to create some white-space.-->
-          <spacer type="block" width="50" /> for Geeks</p>
-
+      <br>
+        <h2>Square: (For animation)</h2>
+        <div id="blue"></div>
 </body>
 </html>
