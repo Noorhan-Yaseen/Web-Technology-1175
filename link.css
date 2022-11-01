@@ -1,0 +1,104 @@
+.square{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 2s;
+  }
+  @keyframes mymove {
+    from {
+      left: 0px;
+      width: 100px;
+      height: 100px;
+      transform: rotate(0deg);
+    }
+    to {
+      left: 200px;
+      width: 200px;
+      height: 200px;
+      transform: rotate(180deg);
+    }
+  }
+
+#red:hover{
+  filter:opacity(0.5);
+  border: 2px solid black;
+}
+#green:hover{
+  border: 2px solid black;
+  filter: grayscale(100%);
+}
+#blue:hover{
+  border: 2px solid black;
+  filter:blur(5px);
+}
+h2 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  display: inline-block;
+}
+div.gallery {
+  margin: 5px;
+  border: 2px solid black;
+  width: 180px;
+  float: left;
+}
+div.gallery:hover {
+  border: 2px solid black;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div p{
+  text-align: center;
+}
+
+@media screen and (max-width: 300px) {
+  .gallery img  {
+    width: 92%;
+  }
+}
+@media screen and (min-width: 301px) and (max-width: 799px) {
+  .gallery img {
+    width: 42%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .gallery img {
+    width: 22%;
+  }
+}
+.img {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+.red {
+  padding: 15px;
+  text-align: center;
+}
+.img img {
+  width: 100%;
+  height: auto;
+}
+.class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: yellow;
+  border: 1px solid black;
+  width: 500px;
+}
+.class:hover {
+
+  -moz-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+  direction: rtl;
+  cursor: pointer;
+  margin-left: 600px;
+}
