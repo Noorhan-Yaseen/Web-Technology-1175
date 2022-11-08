@@ -95,7 +95,7 @@ th,td {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 2px;
-   background-color: rgb(252, 164, 102);
+    background-color: bisque;
 
   }
   dialog{
@@ -137,6 +137,11 @@ th,td {
   a:visited {
     background-color: rgb(83, 239, 239);
   }
+  .container input:checked ~ .checkmark {
+    background-color: #21f32f;
+  }
+
+  
   
  
  
